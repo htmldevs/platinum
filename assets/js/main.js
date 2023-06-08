@@ -131,7 +131,25 @@
    window.addEventListener('resize', () => { doubleAction() })
    //========== SKROLLR JS// ==========>
 
-
+   //========== SHOP PAGE ==========>
+   document.addEventListener('DOMContentLoaded', function() {
+      var listIcon = document.querySelector('.list_btn');
+      var gridIcon = document.querySelector('.grid_btn');
+      var productWrapper = document.querySelector('.shop-wrap');
     
+      listIcon.addEventListener('click', function() {
+        productWrapper.classList.add('list-view');
+        gridIcon.classList.remove('active');
+        listIcon.classList.add('active');
+      });
+
+      gridIcon.addEventListener('click', function() {
+        productWrapper.classList.remove('list-view');
+        listIcon.classList.remove('active');
+        gridIcon.classList.add('active');
+      });
+   });
+    
+
 
 })(jQuery);
