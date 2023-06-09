@@ -146,6 +146,29 @@
       });
    });
 
+
+   //========== CUSTOM TAB ==========>
+   function setupMenuTabs(menuSelector, tabLinkSelector, tabSelector) {
+      // Get the menu tab links
+      const tabLinks = document.querySelectorAll(`${menuSelector} ${tabLinkSelector}`);
+      // Get the menu tabs
+      const tabs = document.querySelectorAll(`${menuSelector} ${tabSelector}`);
+      // Add click event listeners to the menu tab links
+      tabLinks.forEach((link, index) => {
+      link.addEventListener('click', () => {
+         // Remove 'active' class from all tab links and tabs
+         tabLinks.forEach(tabLink => tabLink.classList.remove('active'));
+         tabs.forEach(tab => tab.classList.remove('active'));
+   
+         // Add 'active' class to the clicked tab link and corresponding tab
+         link.classList.add('active');
+         tabs[index].classList.add('active');
+      });
+      });
+   }
+   setupMenuTabs('.shop-tab-wrapp', '.shop-tab-link', '.shop-tab');
+   // setupMenuTabs('.menu2', '.menu-tab-link', '.menu-tab');
+
    //========== SHOP PAGE ==========>
    document.addEventListener('DOMContentLoaded', function() {
       var listIcon = document.querySelector('.list_btn');
