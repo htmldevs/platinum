@@ -131,6 +131,21 @@
    window.addEventListener('resize', () => { doubleAction() })
    //========== SKROLLR JS// ==========>
 
+
+   //========== QTY ==========>
+   const qty = document.querySelectorAll(".qty");
+   qty.forEach((wrap) => {
+      let input = wrap.querySelector("input");
+      let stepUp = wrap.querySelector(".spin-up");
+      let stepDown = wrap.querySelector(".spin-down");
+      stepUp.addEventListener("click", () => {
+            input.stepUp();
+      });
+      stepDown.addEventListener("click", () => {
+            input.stepDown();
+      });
+   });
+
    //========== SHOP PAGE ==========>
    document.addEventListener('DOMContentLoaded', function() {
       var listIcon = document.querySelector('.list_btn');
