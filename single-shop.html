@@ -143,12 +143,14 @@
 				<!-- Shop information  -->
 				<div class="single-shop-wrapp position-relative">
 					<div class="row align-items-center gx-5">
-						<div class="col-md-7">
-							<div class="single-shop-img">
+						<div class="col-xl-7 col-lg-6">
+							<div class="single-shop-img yoo-zoom">
 								<img src="./assets/img/shop-page/shop-1.png" class="w-100" alt="">
+								<!-- zoom img  -->
+								<img src="./assets/img/shop-page/shop-1.png" class="yoo-zoom-img">
 							</div>
 						</div>
-						<div class="col-md-5">
+						<div class="col-xl-5 col-lg-6">
 							<div class="single-product-info">
 								<p class="fz-14 color-black">CNC Machining</p>
 								<h3>Machined Titanium Medical Housing</h3>							
@@ -162,7 +164,7 @@
 									</ul>
 									<span class="color-black fz-14">12 Reviews</span>
 								</div>
-								<h2 class="font-regular fz-40 mb-40">$120.00</h2>			
+								<h2 class="font-regular fz-40 mb-40 mb-md-20 mb-xs-20">$120.00</h2>			
 								<div class="shop-qyt-wrap d-flex align-items-center justify-content-between">
 									<h6 class="mb-0">Quantity</h6>
 									<div class="qty d-flex">
@@ -178,7 +180,7 @@
 									</div>
 									<div class="stock color-black fz-14">In Stock</div>
 								</div>
-								<a href="#" class="cart-btn mt-30">Add to Cart</a>
+								<a href="#" class="cart-btn mt-30 mt-xs-20">Add to Cart</a>
 								<div class="delivery-text d-flex align-items-center gap-2 color-black fz-16 mt-20">
 									<img src="./assets/img/shop-page/delivery.svg" alt="">
 									Estimated Delivery: <strong>03 Working Days</strong>
@@ -195,31 +197,44 @@
 				<!-- Tab section  -->
 				<div class="shop-tab-wrapp mt-70">
 					<div class="row">
-						<div class="col-md-3">
-							<div class="shop-tab-links d-flex flex-column gap-4">
-								<div class="shop-tab-link">Product Description</div>
+						<div class="col-xl-3">
+							<div class="shop-tab-links d-flex flex-column gap-3 gap-md-4 mb-xs-50 mb-md-30 mb-lg-30">
+								<div class="shop-tab-link active">Product Description</div>
 								<div class="shop-tab-link">Additional Information</div>
-								<div class="shop-tab-link active">Product Reviews</div>
+								<div class="shop-tab-link">Product Reviews</div>
 							</div>
 						</div>
-						<div class="col-md-9">
+						<div class="col-xl-9">
 							<div class="shop-tabs pr-60 pr-xs-15">
 
 								<!-- Description  -->
-								<div class="shop-tab">
+								<div class="shop-tab active">
 									<div class="product-description">
-										<h3 class="title-2 position-relative mb-30 mb-xs-20">Product Description</h3>
+										<h3 class="title-2 position-relative mb-30 mb-xs-30">Product Description</h3>
 										<p>At Platinum Eagle, We Take Great Pride In The Quality And Precision Of Our Manufacturing Process. Our Team Is Dedicated To Ensuring That Every Part We Produce Meets Our Rigorous Specifications And Can Withstand The Demands Of Time And Use. We Understand That Precision And Durability Are Essential In Cnc Precision Machining, And We Make Sure That Our Parts Are Designed And Produced With These Factors In Mind.</p>
 										<p>At Platinum Eagle, We Take Great Pride In The Quality And Precision Of Our Manufacturing Process. Our Team Is Dedicated To Ensuring That Every Part We Produce Meets Our Rigorous Specifications And Can Withstand The Demands Of Time And Use.</p>
 										
 										<ul class="dot-list d-flex flex-column color-black mt-30">
-											<li><span></span> High hardness, electrically conductive, low coefficient of friction, high melting point</li>
-											<li><span></span> Electrical properties, unstable, strong odor, hydrolyzes</li>
-											<li><span></span> Heavy, colorless, toxic, strong odor, fumes in air</li>
-											<li><span></span> Cost-effective, chemically inert, non-toxic</li>
+											<li>
+												<span class="circle-dots"></span>
+												<span class="flex-1">High hardness, electrically conductive, low coefficient of friction, high melting point</span>
+											</li>
+
+											<li>
+												<span class="circle-dots"></span> 
+												<span class="flex-1">Electrical properties, unstable, strong odor, hydrolyzes</span>
+											</li>
+											<li>
+												<span class="circle-dots"></span>
+												<span class="flex-1">Heavy, colorless, toxic, strong odor, fumes in air</span>
+											</li>
+											<li>
+												<span class="circle-dots"></span> 
+												<span class="flex-1">Cost-effective, chemically inert, non-toxic</span>
+											</li>
 										</ul>
 	
-										<div class="video-bx bg-attachment position-relative mt-50 mb-40" style="background-image: url('assets/img/hero/video-bg.jpg');">
+										<div class="video-bx bg-attachment position-relative mt-50 mb-40 mt-xs-30 mb-xs-30" style="background-image: url('assets/img/hero/video-bg.jpg');">
 											<a href="" class="video-btn"><i class="fa fa-play"></i></a>
 										</div>
 	
@@ -258,9 +273,9 @@
 								</div>
 								
 								<!-- Reviews  -->
-								<div class="shop-tab active">
+								<div class="shop-tab">
 									<div class="product-reviews">
-										<h3 class="title-2 position-relative mb-30 mb-xs-20">Product Reviews</h3>
+										<h3 class="title-2 position-relative mb-30 mb-xs-30">Product Reviews</h3>
 
 										<!-- Title  -->
 										<div class="d-flex align-items-center justify-content-between mb-20">
@@ -274,7 +289,7 @@
 												</ul>
 												<span class="color-black fz-14">Based on 2 reviews</span>
 											</div>
-											<a href="#" class="review-btn">Write a review</a>
+											<a href="#" class="review-btn d-none d-md-block">Write a review</a>
 										</div>
 										
 										<!-- review single item  -->
@@ -282,9 +297,9 @@
 											<div class="review-author-img">
 												<img src="./assets/img/shop-page/author-1.jpg" alt="">
 											</div>
-											<div class="review-info pl-20 flex-1"> 
-												<h4 class="mb-5px">Thomas Nomina <span class="font-regular ml-10">on Jun 12, 2021</span></h4>
-												<ul class="star-rating d-flex gap-2 mb-20">
+											<div class="review-info pl-20 pl-xs-10 flex-1"> 
+												<h4 class="mb-5px">Thomas Nomina <span class="font-regular ml-10 ml-xs-0">on Jun 12, 2021</span></h4>
+												<ul class="star-rating d-flex gap-2 mb-20 mb-xs-10">
 													<li class="active"><i class="far fa-star"></i></li>
 													<li class="active"><i class="far fa-star"></i></li>
 													<li class="active"><i class="far fa-star"></i></li>
@@ -295,47 +310,12 @@
 
 												<!-- reply box  -->
 												<div class="review-reply mt-30 mt-xs-20">
-													<h4 class="mb-5px">Platinum Eagle <span class="font-regular ml-10">on Jun 12, 2021</span></h4>
+													<h4 class="mb-5px">Platinum Eagle <span class="font-regular ml-10 ml-xs-0">on Jun 12, 2021</span></h4>
 													<p class="mb-0 color-black">Excellent customer service! Whenever I needed something they were there for me.</p>
 												</div>
 												<!-- reply box end -->
 											</div>
 										</div>
-										<!-- review single item  -->
-										<div class="review-item d-flex pt-30 pb-30">
-											<div class="review-author-img">
-												<img src="./assets/img/shop-page/author-2.jpg" alt="">
-											</div>
-											<div class="review-info pl-20 flex-1"> 
-												<h4 class="mb-5px">Willimes Dom <span class="font-regular ml-10">on Jun 12, 2021</span></h4>
-												<ul class="star-rating d-flex gap-2 mb-20">
-													<li class="active"><i class="far fa-star"></i></li>
-													<li class="active"><i class="far fa-star"></i></li>
-													<li class="active"><i class="far fa-star"></i></li>
-													<li class="active"><i class="far fa-star"></i></li>
-													<li class="active"><i class="far fa-star"></i></li>
-												</ul>
-												<p class="mb-0">Excellent customer service! Whenever I needed something they were there for me.</p>
-											</div>
-										</div>
-										<!-- review single item  -->
-										<div class="review-item d-flex pt-30 pb-30">
-											<div class="review-author-img">
-												<img src="./assets/img/shop-page/author-3.jpg" alt="">
-											</div>
-											<div class="review-info pl-20 flex-1"> 
-												<h4 class="mb-5px">Kalim Oliva <span class="font-regular ml-10">on Jun 12, 2021</span></h4>
-												<ul class="star-rating d-flex gap-2 mb-20">
-													<li class="active"><i class="far fa-star"></i></li>
-													<li class="active"><i class="far fa-star"></i></li>
-													<li class="active"><i class="far fa-star"></i></li>
-													<li class="active"><i class="far fa-star"></i></li>
-													<li class="active"><i class="far fa-star"></i></li>
-												</ul>
-												<p class="mb-0">Excellent customer service! Whenever I needed something they were there for me.</p>
-											</div>
-										</div>
-
 
 										<!-- Review Form  -->
 										<div class="review-form-wrapper mt-30">
@@ -349,7 +329,7 @@
 															<input type="text" placeholder="Enter your name">
 														</div>
 														<div class="input-item d-flex align-items-center gap-3 mt-20">
-															<label class="fz-16 color-black">Rating</label>
+															<label class="fz-16 color-black">Email</label>
 															<input type="text" placeholder="user@domain.com">
 														</div>
 													</div>
@@ -375,8 +355,6 @@
 											</form>
 
 										</div>
-
-
 									</div>
 								</div>
 							</div>
