@@ -104,7 +104,14 @@
       font-size: 14px;
    }
    /* GLOBAL// */
-
+   
+   .border-shape::after,
+   .border-shape::before {
+      border-radius: 20px;
+   }
+   .border-shape::after {
+      border-width: 3px;
+   }
 
    /* Section title  */
    .section-title p span {
