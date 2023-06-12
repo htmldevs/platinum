@@ -3186,3 +3186,118 @@ table {
    }
 }
 /* ============== CHECKOUT PAGE END ================= */
+
+
+/* ============== THANK YOU PAGE ================= */
+.thank-you-wrap {
+  background-color: #F2F2F2;
+  border-radius: 50px;
+  padding: 50px 60px;
+}
+.thank-you-area .section-content p,
+.search-resutl-title p {
+   font-family: var(--font-mono);
+	font-size: 24px;
+   color: #000;
+}
+.thank-you-wrap h3 {
+   font-size: 35px;
+}
+.thank-you-wrap .total-price-bx {
+  background-color: #fff;
+  border-radius: 40px;
+}
+.thank-you-wrap .total-price-bx li {
+  padding: 1.5em 3em;
+}
+.thank-you-wrap .total-price-bx ul {
+  padding: 0 2.5em;
+}
+.thank-you-wrap .total-price-bx ul li:last-child {
+   padding: 1em 2.8em;
+}
+/* RESPONSIVE  */
+@media (min-width: 768px) and (max-width: 1199px) {
+   .thank-you-area .section-content p {
+      font-size: 18px;
+   }
+   .thank-you-area .section-content img {
+      max-width: 120px;
+   }
+}
+@media (max-width: 767px) {
+   .thank-you-area .section-content img {
+      max-width: 100px;
+   }
+   .thank-you-area .section-content p {
+      font-size: 14px;
+   }
+   .thank-you-wrap h3 {
+      font-size: 24px;
+   }
+   .thank-you-wrap {
+      border-radius: 20px;
+      padding: 20px 20px;
+   }
+   .thank-you-wrap .total-price-bx li {
+      padding: 1em 1em;
+   }
+   .thank-you-wrap .total-price-bx ul li:last-child {
+      padding: 0.6em 1em;
+   }
+   .thank-you-wrap .total-price-bx ul {
+      padding: 0 1em;
+   }
+   .thank-you-wrap .total-price-bx {
+      border-radius: 20px;
+   }
+   .total-price-bx ul li:last-child span {
+      font-size: 16px;
+   }
+}
+/* ============== THANK YOU PAGE end ================= */
+
+
+/* ============== SEARCH RESULT PAGE ================= */
+.search-result-input input {
+	border: 2px solid var(--theme-color);
+	border-radius: 50px 0 0 50px !important;
+	transform: translateX(3em);
+	margin-left: -3em;
+	padding-left: 60px;
+   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.search-result-input input::placeholder {
+   color: #000;
+   text-transform: capitalize;
+   font-weight: normal;
+}
+.search-result-input  .cart-btn {
+   width: 200px;
+   padding: 1em 2em;
+}
+.search-result-input i {
+	z-index: 1;
+	left: 30px;
+	font-size: 20px;
+   color: #000;
+}
+@media (max-width: 767px) {
+   .search-result-input i {
+      left: 15px;
+      font-size: 16px;
+   }
+   .search-result-input input {
+      padding-left: 40px;
+      padding-right: 3.3em;
+      font-size: 12px;
+   }
+   .search-result-input .cart-btn {
+      width: 170px;
+      padding: 1em 1em;
+   }
+   .search-resutl-title p {
+      font-size: 16px;
+   }
+}
+/* ============== SEARCH RESULT PAGE end ================= */
