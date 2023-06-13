@@ -2023,6 +2023,9 @@ a.login-transparent {
 .page-title-area {
    height: 670px;
 }
+.page-title-2 {
+	height: 460px;
+}
 .page-title-img img {
   height: 400px;
   border-radius: 200px;
@@ -2054,7 +2057,7 @@ a.login-transparent {
 /* RESPONSIVE  */
 @media (min-width: 1200px) and (max-width: 1500px) {
    .page-title-img img {
-      height: 400px;
+      height: 360px;
       border-radius: 200px;
    }
    .fz-20 {
@@ -2075,6 +2078,9 @@ a.login-transparent {
    .page-title-area {
       height: 550px;
    }
+   .page-title-2 {
+      height: 350px;
+   }
    .fz-20 {
       font-size: 14px;
    }
@@ -2091,7 +2097,10 @@ a.login-transparent {
       border-radius: 150px;
    }
    .page-title-area {
-      height: 400px;
+      height: 300px;
+   }
+   .page-title-2 {
+      height: 250px;
    }
    .fz-20 {
       font-size: 14px;
@@ -2105,7 +2114,10 @@ a.login-transparent {
 }
 @media (max-width: 767px) {
    .page-title-area {
-      height: 350px;
+      height: 260px;
+   }
+   .page-title-2 {
+      height: 200px;
    }
    .fz-20 {
       font-size: 14px;
