@@ -195,7 +195,7 @@
       });
    }
    setupMenuTabs('.shop-tab-wrapp', '.shop-tab-link', '.shop-tab');
-   // setupMenuTabs('.menu2', '.menu-tab-link', '.menu-tab');
+   setupMenuTabs('.account-area', '.account-tab-link', '.account-tab');
 
    //========== SHOP PAGE ==========>
    document.addEventListener('DOMContentLoaded', function() {

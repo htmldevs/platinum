@@ -3301,3 +3301,386 @@ table {
    }
 }
 /* ============== SEARCH RESULT PAGE end ================= */
+
+
+/* ============== MY ACCOUNT PAGE ================= */
+
+/* Tab */
+.account-tab {
+  display: none;
+}
+.account-tab.active {
+  display: block;
+}
+
+
+.account-tab-links {
+  background-color: #F2F2F2;
+  border-radius: 40px;
+  padding: 20px 15px;
+  gap: 7.5px;
+}
+.account-tab-link {
+  font-size: 16px;
+  background-color: #fff;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  color: #000;
+  font-weight: 700;
+  gap: 10px;
+  cursor: pointer;
+  padding: 1em 1.5em;
+  transition: .3s;
+  position: relative;
+  z-index: 1;
+}
+
+.account-tab-link:after {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 100%;
+  background-color: var(--theme-color);
+  left: 0;
+  top: 0;
+  border-radius: 50px;
+  z-index: -1;
+  transition: .3s;
+}
+.account-tab-link.active::after {
+  width: 100%;
+}
+.account-tab-link img {
+  max-width: 22px;
+}
+.account-tab-link.active {
+  color: #fff;
+}
+.account-tab-link.active img {
+  filter: brightness(0) invert(100%);
+}
+
+.account-tabs {
+	padding: 50px 50px;
+   padding-bottom: 35px;
+}
+.account-tabs::after, .account-tabs::before {
+   border-radius: 40px;
+}
+
+/* Order  */
+.account-order table th, .account-order table td {
+  padding: 1.2em 1.5em;
+  font-size: 16px;
+}
+.account-order table th {
+   color: #000;
+   font-size: 18px;
+}
+.account-order table thead {
+  position: relative;
+  z-index: 1;
+}
+.account-order table thead:after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: #F2F2F2;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 50px;
+  transform: scaleX(1.01);
+}
+.account-order table td {
+  border-right: 3px solid #F2F2F2;
+  border-bottom: 3px solid #F2F2F2;
+  padding: 1.4em 1.5em;
+}
+.account-order table tr > td:last-child {
+  border-right: none;
+}
+.account-order {
+	border: 3px solid #F2F2F2;
+	border-top: none;
+	border-radius: 40px;
+	margin: -25px;
+	margin-bottom: -15px;
+}
+.account-order table tr:last-child td {
+  border-bottom: 0;
+}
+.order-action a {
+  color: #000;
+  border: 2px solid #AAAAAA;
+  border-radius: 100px;
+  padding: 0.5em 1em;
+  font-size: 14px;
+  font-weight: 700;
+}
+.order-action a:hover {
+  background-color: var(--theme-color);
+  border-color: transparent;
+  color: #fff;
+}
+/* RESPONSIVE  */
+@media (min-width: 1200px) and (max-width: 1500px) {
+   .account-order table td {
+      font-size: 14px;
+   }
+   .account-order table td,
+   .account-order table th {
+      padding: 1.4em 1em;
+   }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+   .account-dashboard h3 {
+      font-size: 24px;
+   }
+   .account-order table td {
+      padding: 1em 1em;
+   }
+   .account-order {
+      overflow-x: auto;
+   }
+   .account-order table {
+      width: 800px;
+   }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+   .account-tab-link {
+      width: 48%;
+   }
+   .account-tab-links {
+      gap: 7.5px 0;
+      justify-content: space-around;
+      flex-wrap: wrap !important;
+      flex-direction: row !important;
+   }
+   .account-order table td,
+   .account-order table th {
+      padding: 1em 1em;
+      font-size: 14px;
+   }
+   .order-action a {
+      border-width: 1px;
+      font-size: 12px;
+   }
+}
+@media (max-width: 767px) {
+   .account-order table thead {
+      display: none;
+   }
+   .account-order {
+      margin: 0;
+   }
+   .account-order table td {
+      border-right: 0;
+      border-bottom: 2px solid #F2F2F2;
+      padding: 1em 1em;
+      display: block;
+      text-align: right;
+      position: relative;
+   }
+   
+   .account-order table td:after {
+      position: absolute;
+      content: '';
+      top: 50%;
+      left: 10px;
+      transform: translateY(-50%);
+      color: #000;
+      font-size: 16px;
+   }
+   .account-order {
+      border: 3px solid #F2F2F2;
+      border-radius: 20px;
+   }
+   .account-order table tr:last-child td {
+      border-bottom: 2px solid #F2F2F2;
+   }
+   .account-order table tbody td:last-child {
+      border-bottom: none !important;
+   }
+   .account-order table tbody tr {
+      display: block;
+      margin-bottom: 30px;
+    }
+    .account-order table tbody tr:last-child {
+      margin-bottom: 0;
+    }
+
+    .account-order table td:nth-child(1)::after {content: 'Order';}
+    .account-order table td:nth-child(2)::after {content: 'Date';}
+    .account-order table td:nth-child(3)::after {content: 'Status';}
+    .account-order table td:nth-child(4)::after {content: 'Total';}
+}
+
+/* Address */
+.account-address {
+	background-color: #F2F2F2;
+	border-radius: 30px;
+	padding: 15px 15px;
+}
+.account-address h4 {
+	font-size: 22px;
+	background-color: #fff;
+	border-radius: 100px;
+	padding: 0.4em 1em;
+}
+.account-address h4 a {
+	width: 2em;
+	height: 2em;
+	border: 2px solid #ADADAD;
+	display: inline-grid;
+	place-content: center;
+	border-radius: 50%;
+	margin-right: -0.5em;
+}
+.account-address h4 a:hover {
+  background: #ADADAD;
+}
+.address-input input {
+  background: transparent;
+  border-bottom: 1px solid #A7A7A7;
+  padding: 1.4em 0;
+  cursor: pointer;
+}
+.address-input input::placeholder {
+   color: #000;
+}
+.address-input input:focus {
+	box-shadow: none;
+	background: transparent;
+}
+.address-input input:last-child {
+   border-bottom: 0;
+}
+.address-input {
+  padding: 0 1em;
+}
+/* RESPONSIVE  */
+@media (min-width: 1200px) and (max-width: 1500px) {
+   .account-address h4 {
+      font-size: 18px;
+   }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+   .account-address h4 {
+      font-size: 16px;
+   }
+}
+@media (max-width: 767px) {
+   .account-tabs {
+      padding: 15px;
+      padding-bottom: 20px;
+   }
+   .account-address h4 {
+      font-size: 18px;
+   }
+   .account-address {
+      border-radius: 20px;
+   }
+}
+
+/* Payment-method  */
+.cart-item {
+  border: 4px solid #F2F2F2;
+  border-radius: 30px;
+  padding: 20px 30px;
+  margin-bottom: 15px;
+}
+.cart-left h5 {
+  font-size: 20px;
+  color: #000;
+  line-height: 1.3;
+}
+.cart-left img {
+	max-width: 70px;
+}
+.cart-left h5 span {
+  display: block;
+  font-size: 14px;
+  color: #444444;
+}
+.cart-item .expired {
+	border-left: 1px solid #898989;
+	padding-left: 60px;
+	margin-left: 60px;
+}
+.account-methods .cart-btn {
+   padding: 0.8em 2em;
+}
+.cart-right .cart-btn {
+   width: 160px;
+   text-align: center;
+   padding: 0.6em 1em;
+}
+/* RESPONSIVE  */
+@media (min-width: 992px) and (max-width: 1199px) {
+   .cart-item .expired {
+      padding-left: 15px;
+      margin-left: 15px;
+   }
+   .cart-right .cart-btn {
+      width: 130px;
+      font-size: 14px;
+   }
+   .cart-item {
+      border: 3px solid #F2F2F2;
+      border-radius: 20px;
+      padding: 15px 15px;
+   }
+   .cart-left h5 {
+      font-size: 16px;
+   }
+   .cart-left h5 span {
+      font-size: 12px;
+   }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+   .cart-item .expired {
+      padding-left: 30px;
+      margin-left: 30px;
+   }
+}
+@media (max-width: 767px) {
+   .cart-left img {
+      max-width: 40px;
+   }
+   .cart-item .expired {
+      padding-left: 10px;
+      margin-left: 10px;
+   }
+   .cart-left h5 {
+      font-size: 14px;
+      line-height: 1.5;
+   }
+   .cart-right .cart-btn {
+      width: 150px;
+      margin-top: 10px;
+   }
+   .cart-item {
+      border: 2px solid #F2F2F2;
+      border-radius: 10px;
+      padding: 15px 15px;
+      margin-bottom: 15px;
+   }
+   .cart-left h5 span {
+      font-size: 12px;
+   }
+}
+
+
+/* ACCOUNT DETAILS  */
+.account-details .input-item label {
+   width: auto;
+   color: #000;
+   margin-bottom: 10px;
+}
+.account-details h4 {
+   text-decoration: underline;
+}
+/* ============== MY ACCOUNT PAGE end ================= */
